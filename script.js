@@ -6,67 +6,68 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado:  "Ao fazer compras, você prefere apoiar marcas sustentáveis e sociamente responsáveis?",
+        enunciado:  "Durante uma aula sobre ética e tecnologia, você descobre que a IA pode ser usada para criar deepfakes (imagens ou vídeos falsos). Qual é a sua reação inicial?",
         alternativas: [
             {
-                texto: "Sim, acredito que é importante incentivar práticas responsáveis.",
-                afirmacao: "Acredito que é importante incentivar práticas responsáveis. "
+                texto: "Isso é preocupante!",
+                afirmacao: "Considera que o uso de deepfakes pode causar desinformação e prejudicar pessoas,"
             },
             {
-                texto: "Não, costumo escolher pelo preço e conveniência.",
-                negacao: "Costumo escolher pelo preço e conveniência."
+                texto: "Isso é interessante!",
+                afirmacao: "Vê o potencial criativo da tecnologia, mas reconhece que ela precisa ser usada com responsabilidade,"
+                
             }
         ]
     },
     {
-        enunciado: "Quando consome informações, você busca diferentes fontes para entender melhor um tema?",
+        enunciado: "Sua escola propõe um projeto para ensinar crianças a usarem ferramentas de IA de forma ética. Como você decide contribuir?",
         alternativas: [
             {
-                texto: "Sim, gosto de ter uma visão mais completa e imparcial.",
-                afirmacao: "."
+                texto: "Crio um guia simples explicando como usar IA de forma segura e responsável.",
+                afirmacao: "querendo ajudar as crianças a entenderem os benefícios e os riscos da IA."
             },
             {
-                texto: "Não, geralmente consumo conteúdos de fontes habituais.",
-                afirmacao: "."
+                texto: "Organizo uma oficina prática para mostrar como usar ferramentas de IA no dia a dia.",
+                afirmacao: "preferindo ensinar na prática, mostrando exemplos reais de como a IA pode ser útil."
             }
         ]
     },
     {
-        enunciado: "Você adota hábitos sustentáveis no dia a dia, como evitar desperdícios e reduzir o lixo?",
+        enunciado: "Em um debate na escola, surge a questão de como a IA pode impactar a privacidade das pessoas. Qual é o seu posicionamento?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "Defendo que é necessário criar leis mais rígidas para proteger os dados pessoais.",
+                afirmacao: "Acredita que a privacidade deve ser uma prioridade no desenvolvimento de tecnologias."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "Acho que as pessoas precisam aprender a proteger seus próprios dados.",
+                afirmacao: "Acredita que a educação digital é a melhor forma de lidar com os riscos à privacidade."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Durante uma aula de artes, a professora sugere usar IA para criar uma obra digital. Como você decide participar?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "Uso uma ferramenta de IA para gerar ideias e criar uma obra única.",
+                afirmacao: "Gosta de explorar novas tecnologias para expandir sua criatividade."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "Prefiro criar algo manualmente, mas uso a IA como inspiração.",
+               afirmacao: "Valoriza o trabalho manual, mas reconhece o potencial da IA como ferramenta auxiliar."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Após assistir a um documentário sobre o impacto da IA no meio ambiente, você decide agir. O que você faz?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "Pesquiso como a IA pode ser usada para monitorar e proteger o meio ambiente.",
+                afirmacao: "Julga que a tecnologia pode ser uma aliada na preservação ambiental."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "Participo de campanhas para conscientizar as pessoas sobre o impacto ambiental da tecnologia.",
+                afirmacao: "Prefere focar na educação e na mobilização social para promover mudanças."
             }
         ]
     },
@@ -105,7 +106,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
